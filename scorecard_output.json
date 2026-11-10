@@ -1,0 +1,854 @@
+{
+  "n_rows": 32416,
+  "n_duplicates_dropped": 165,
+  "base_score": 600,
+  "base_odds": 50,
+  "pdo": 20,
+  "base_points": 526,
+  "auc": 0.8736,
+  "gini": 0.7472,
+  "ks": 0.616,
+  "overall_bad_rate": 0.2187,
+  "kept_variables": [
+    "person_income",
+    "person_emp_length",
+    "loan_amnt",
+    "loan_int_rate",
+    "loan_percent_income",
+    "person_home_ownership",
+    "loan_intent",
+    "loan_grade",
+    "cb_person_default_on_file"
+  ],
+  "dropped_variables": {
+    "person_age": 0.0067,
+    "cb_person_cred_hist_length": 0.0041
+  },
+  "scorecard": [
+    {
+      "variable": "person_income",
+      "iv": 0.4579,
+      "coefficient": -0.8698,
+      "rows": [
+        {
+          "bin": "(3999.999, 33000.0]",
+          "count": 5551,
+          "bad_rate": 0.4495,
+          "woe": -1.0702,
+          "points": -27
+        },
+        {
+          "bin": "(33000.0, 44004.0]",
+          "count": 5263,
+          "bad_rate": 0.2687,
+          "woe": -0.2719,
+          "points": -7
+        },
+        {
+          "bin": "(44004.0, 55000.0]",
+          "count": 5478,
+          "bad_rate": 0.1944,
+          "woe": 0.1482,
+          "points": 4
+        },
+        {
+          "bin": "(55000.0, 70000.0]",
+          "count": 5654,
+          "bad_rate": 0.1677,
+          "woe": 0.3288,
+          "points": 8
+        },
+        {
+          "bin": "(70000.0, 93000.0]",
+          "count": 5096,
+          "bad_rate": 0.135,
+          "woe": 0.5838,
+          "points": 15
+        },
+        {
+          "bin": "(93000.0, 6000000.0]",
+          "count": 5374,
+          "bad_rate": 0.0891,
+          "woe": 1.0503,
+          "points": 26
+        }
+      ]
+    },
+    {
+      "variable": "person_emp_length",
+      "iv": 0.067,
+      "coefficient": -0.4579,
+      "rows": [
+        {
+          "bin": "(-0.001, 1.0]",
+          "count": 6983,
+          "bad_rate": 0.2787,
+          "woe": -0.3221,
+          "points": -4
+        },
+        {
+          "bin": "(1.0, 2.0]",
+          "count": 3832,
+          "bad_rate": 0.2576,
+          "woe": -0.2147,
+          "points": -3
+        },
+        {
+          "bin": "(2.0, 4.0]",
+          "count": 6305,
+          "bad_rate": 0.2067,
+          "woe": 0.0719,
+          "points": 1
+        },
+        {
+          "bin": "(4.0, 6.0]",
+          "count": 5578,
+          "bad_rate": 0.1875,
+          "woe": 0.1929,
+          "points": 3
+        },
+        {
+          "bin": "(6.0, 8.0]",
+          "count": 3862,
+          "bad_rate": 0.1789,
+          "woe": 0.2501,
+          "points": 3
+        },
+        {
+          "bin": "(8.0, 41.0]",
+          "count": 4967,
+          "bad_rate": 0.1679,
+          "woe": 0.3271,
+          "points": 4
+        },
+        {
+          "bin": "Missing",
+          "count": 889,
+          "bad_rate": 0.3172,
+          "woe": -0.5073,
+          "points": -7
+        }
+      ]
+    },
+    {
+      "variable": "loan_amnt",
+      "iv": 0.0775,
+      "coefficient": -0.5432,
+      "rows": [
+        {
+          "bin": "(499.999, 4000.0]",
+          "count": 6154,
+          "bad_rate": 0.2117,
+          "woe": 0.0412,
+          "points": 1
+        },
+        {
+          "bin": "(4000.0, 6000.0]",
+          "count": 5972,
+          "bad_rate": 0.1736,
+          "woe": 0.2866,
+          "points": 4
+        },
+        {
+          "bin": "(6000.0, 8000.0]",
+          "count": 4586,
+          "bad_rate": 0.1758,
+          "woe": 0.2719,
+          "points": 4
+        },
+        {
+          "bin": "(8000.0, 10500.0]",
+          "count": 4924,
+          "bad_rate": 0.1988,
+          "woe": 0.1203,
+          "points": 2
+        },
+        {
+          "bin": "(10500.0, 15000.0]",
+          "count": 5868,
+          "bad_rate": 0.234,
+          "woe": -0.0873,
+          "points": -1
+        },
+        {
+          "bin": "(15000.0, 35000.0]",
+          "count": 4912,
+          "bad_rate": 0.3239,
+          "woe": -0.5373,
+          "points": -8
+        }
+      ]
+    },
+    {
+      "variable": "loan_int_rate",
+      "iv": 0.6515,
+      "coefficient": -0.0329,
+      "rows": [
+        {
+          "bin": "(5.419, 7.49]",
+          "count": 5224,
+          "bad_rate": 0.0837,
+          "woe": 1.1197,
+          "points": 1
+        },
+        {
+          "bin": "(7.49, 9.33]",
+          "count": 4556,
+          "bad_rate": 0.1187,
+          "woe": 0.7306,
+          "points": 1
+        },
+        {
+          "bin": "(9.33, 10.99]",
+          "count": 5045,
+          "bad_rate": 0.1625,
+          "woe": 0.366,
+          "points": 0
+        },
+        {
+          "bin": "(10.99, 12.68]",
+          "count": 4849,
+          "bad_rate": 0.178,
+          "woe": 0.2567,
+          "points": 0
+        },
+        {
+          "bin": "(12.68, 14.27]",
+          "count": 4779,
+          "bad_rate": 0.2362,
+          "woe": -0.0999,
+          "points": 0
+        },
+        {
+          "bin": "(14.27, 23.22]",
+          "count": 4868,
+          "bad_rate": 0.546,
+          "woe": -1.4575,
+          "points": -1
+        },
+        {
+          "bin": "Missing",
+          "count": 3095,
+          "bad_rate": 0.2071,
+          "woe": 0.0689,
+          "points": 0
+        }
+      ]
+    },
+    {
+      "variable": "loan_percent_income",
+      "iv": 0.7731,
+      "coefficient": -0.9104,
+      "rows": [
+        {
+          "bin": "(-0.001, 0.07]",
+          "count": 6103,
+          "bad_rate": 0.1077,
+          "woe": 0.8413,
+          "points": 22
+        },
+        {
+          "bin": "(0.07, 0.11]",
+          "count": 5702,
+          "bad_rate": 0.1307,
+          "woe": 0.6216,
+          "points": 16
+        },
+        {
+          "bin": "(0.11, 0.15]",
+          "count": 5285,
+          "bad_rate": 0.1285,
+          "woe": 0.6408,
+          "points": 17
+        },
+        {
+          "bin": "(0.15, 0.2]",
+          "count": 5339,
+          "bad_rate": 0.1798,
+          "woe": 0.2442,
+          "points": 6
+        },
+        {
+          "bin": "(0.2, 0.27]",
+          "count": 4784,
+          "bad_rate": 0.2124,
+          "woe": 0.0373,
+          "points": 1
+        },
+        {
+          "bin": "(0.27, 0.83]",
+          "count": 5203,
+          "bad_rate": 0.5827,
+          "woe": -1.607,
+          "points": -42
+        }
+      ]
+    },
+    {
+      "variable": "person_home_ownership",
+      "iv": 0.3753,
+      "coefficient": -0.8772,
+      "rows": [
+        {
+          "bin": "MORTGAGE",
+          "count": 13369,
+          "bad_rate": 0.1262,
+          "woe": 0.6617,
+          "points": 17
+        },
+        {
+          "bin": "OTHER",
+          "count": 106,
+          "bad_rate": 0.3113,
+          "woe": -0.4874,
+          "points": -12
+        },
+        {
+          "bin": "OWN",
+          "count": 2563,
+          "bad_rate": 0.0749,
+          "woe": 1.2381,
+          "points": 31
+        },
+        {
+          "bin": "RENT",
+          "count": 16378,
+          "bad_rate": 0.3161,
+          "woe": -0.5014,
+          "points": -13
+        }
+      ]
+    },
+    {
+      "variable": "loan_intent",
+      "iv": 0.0959,
+      "coefficient": -1.3567,
+      "rows": [
+        {
+          "bin": "DEBTCONSOLIDATION",
+          "count": 5189,
+          "bad_rate": 0.2868,
+          "woe": -0.3621,
+          "points": -14
+        },
+        {
+          "bin": "EDUCATION",
+          "count": 6411,
+          "bad_rate": 0.1725,
+          "woe": 0.2945,
+          "points": 12
+        },
+        {
+          "bin": "HOMEIMPROVEMENT",
+          "count": 3594,
+          "bad_rate": 0.2615,
+          "woe": -0.2354,
+          "points": -9
+        },
+        {
+          "bin": "MEDICAL",
+          "count": 6042,
+          "bad_rate": 0.2676,
+          "woe": -0.2665,
+          "points": -10
+        },
+        {
+          "bin": "PERSONAL",
+          "count": 5498,
+          "bad_rate": 0.199,
+          "woe": 0.1193,
+          "points": 5
+        },
+        {
+          "bin": "VENTURE",
+          "count": 5682,
+          "bad_rate": 0.1485,
+          "woe": 0.4726,
+          "points": 19
+        }
+      ]
+    },
+    {
+      "variable": "loan_grade",
+      "iv": 0.879,
+      "coefficient": -1.1689,
+      "rows": [
+        {
+          "bin": "A",
+          "count": 10703,
+          "bad_rate": 0.0996,
+          "woe": 0.9283,
+          "points": 31
+        },
+        {
+          "bin": "B",
+          "count": 10387,
+          "bad_rate": 0.1632,
+          "woe": 0.3615,
+          "points": 12
+        },
+        {
+          "bin": "C",
+          "count": 6438,
+          "bad_rate": 0.2075,
+          "woe": 0.0667,
+          "points": 2
+        },
+        {
+          "bin": "D",
+          "count": 3620,
+          "bad_rate": 0.5906,
+          "woe": -1.6393,
+          "points": -55
+        },
+        {
+          "bin": "E",
+          "count": 963,
+          "bad_rate": 0.6449,
+          "woe": -1.8688,
+          "points": -63
+        },
+        {
+          "bin": "F",
+          "count": 241,
+          "bad_rate": 0.7054,
+          "woe": -2.142,
+          "points": -72
+        },
+        {
+          "bin": "G",
+          "count": 64,
+          "bad_rate": 0.9844,
+          "woe": -5.0185,
+          "points": -169
+        }
+      ]
+    },
+    {
+      "variable": "cb_person_default_on_file",
+      "iv": 0.1643,
+      "coefficient": 0.0539,
+      "rows": [
+        {
+          "bin": "N",
+          "count": 26686,
+          "bad_rate": 0.1843,
+          "woe": 0.214,
+          "points": 0
+        },
+        {
+          "bin": "Y",
+          "count": 5730,
+          "bad_rate": 0.3787,
+          "woe": -0.7783,
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "score_bands": [
+    {
+      "count": 6792,
+      "bad_rate": 0.6930212014134276,
+      "score": "(299.999, 500.0]"
+    },
+    {
+      "count": 9219,
+      "bad_rate": 0.1681310337346784,
+      "score": "(500.0, 550.0]"
+    },
+    {
+      "count": 11689,
+      "bad_rate": 0.06305073145692532,
+      "score": "(550.0, 600.0]"
+    },
+    {
+      "count": 4668,
+      "bad_rate": 0.019065981148243358,
+      "score": "(600.0, 650.0]"
+    },
+    {
+      "count": 42,
+      "bad_rate": 0.0,
+      "score": "(650.0, 700.0]"
+    }
+  ],
+  "roc_curve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0
+    },
+    {
+      "fpr": 0.0028,
+      "tpr": 0.1474
+    },
+    {
+      "fpr": 0.0084,
+      "tpr": 0.2342
+    },
+    {
+      "fpr": 0.0154,
+      "tpr": 0.3165
+    },
+    {
+      "fpr": 0.0225,
+      "tpr": 0.3961
+    },
+    {
+      "fpr": 0.0299,
+      "tpr": 0.4635
+    },
+    {
+      "fpr": 0.0393,
+      "tpr": 0.5201
+    },
+    {
+      "fpr": 0.0501,
+      "tpr": 0.5702
+    },
+    {
+      "fpr": 0.0622,
+      "tpr": 0.6155
+    },
+    {
+      "fpr": 0.0764,
+      "tpr": 0.6513
+    },
+    {
+      "fpr": 0.0924,
+      "tpr": 0.6878
+    },
+    {
+      "fpr": 0.1102,
+      "tpr": 0.7173
+    },
+    {
+      "fpr": 0.13,
+      "tpr": 0.7445
+    },
+    {
+      "fpr": 0.1524,
+      "tpr": 0.7663
+    },
+    {
+      "fpr": 0.1768,
+      "tpr": 0.7877
+    },
+    {
+      "fpr": 0.2036,
+      "tpr": 0.8043
+    },
+    {
+      "fpr": 0.2317,
+      "tpr": 0.8194
+    },
+    {
+      "fpr": 0.2602,
+      "tpr": 0.8328
+    },
+    {
+      "fpr": 0.2884,
+      "tpr": 0.8443
+    },
+    {
+      "fpr": 0.3202,
+      "tpr": 0.8572
+    },
+    {
+      "fpr": 0.3512,
+      "tpr": 0.8697
+    },
+    {
+      "fpr": 0.3828,
+      "tpr": 0.8825
+    },
+    {
+      "fpr": 0.415,
+      "tpr": 0.8935
+    },
+    {
+      "fpr": 0.4457,
+      "tpr": 0.9035
+    },
+    {
+      "fpr": 0.4793,
+      "tpr": 0.9124
+    },
+    {
+      "fpr": 0.5106,
+      "tpr": 0.9213
+    },
+    {
+      "fpr": 0.5445,
+      "tpr": 0.9305
+    },
+    {
+      "fpr": 0.5775,
+      "tpr": 0.9382
+    },
+    {
+      "fpr": 0.6095,
+      "tpr": 0.9491
+    },
+    {
+      "fpr": 0.6451,
+      "tpr": 0.9563
+    },
+    {
+      "fpr": 0.6769,
+      "tpr": 0.9636
+    },
+    {
+      "fpr": 0.7107,
+      "tpr": 0.9709
+    },
+    {
+      "fpr": 0.7434,
+      "tpr": 0.9773
+    },
+    {
+      "fpr": 0.7775,
+      "tpr": 0.9821
+    },
+    {
+      "fpr": 0.8144,
+      "tpr": 0.9866
+    },
+    {
+      "fpr": 0.8488,
+      "tpr": 0.9915
+    },
+    {
+      "fpr": 0.886,
+      "tpr": 0.9944
+    },
+    {
+      "fpr": 0.9226,
+      "tpr": 0.9972
+    },
+    {
+      "fpr": 0.9595,
+      "tpr": 0.9993
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0
+    }
+  ],
+  "score_histogram": [
+    {
+      "lo": 263,
+      "hi": 281,
+      "good": 0,
+      "bad": 2
+    },
+    {
+      "lo": 281,
+      "hi": 299,
+      "good": 0,
+      "bad": 4
+    },
+    {
+      "lo": 299,
+      "hi": 318,
+      "good": 0,
+      "bad": 5
+    },
+    {
+      "lo": 318,
+      "hi": 336,
+      "good": 0,
+      "bad": 12
+    },
+    {
+      "lo": 336,
+      "hi": 354,
+      "good": 0,
+      "bad": 9
+    },
+    {
+      "lo": 354,
+      "hi": 372,
+      "good": 0,
+      "bad": 32
+    },
+    {
+      "lo": 372,
+      "hi": 390,
+      "good": 2,
+      "bad": 165
+    },
+    {
+      "lo": 390,
+      "hi": 409,
+      "good": 15,
+      "bad": 298
+    },
+    {
+      "lo": 409,
+      "hi": 427,
+      "good": 29,
+      "bad": 317
+    },
+    {
+      "lo": 427,
+      "hi": 445,
+      "good": 113,
+      "bad": 653
+    },
+    {
+      "lo": 445,
+      "hi": 463,
+      "good": 274,
+      "bad": 934
+    },
+    {
+      "lo": 463,
+      "hi": 482,
+      "good": 527,
+      "bad": 1197
+    },
+    {
+      "lo": 482,
+      "hi": 500,
+      "good": 1114,
+      "bad": 1083
+    },
+    {
+      "lo": 500,
+      "hi": 518,
+      "good": 2012,
+      "bad": 790
+    },
+    {
+      "lo": 518,
+      "hi": 536,
+      "good": 2900,
+      "bad": 454
+    },
+    {
+      "lo": 536,
+      "hi": 555,
+      "good": 3683,
+      "bad": 396
+    },
+    {
+      "lo": 555,
+      "hi": 573,
+      "good": 4074,
+      "bad": 310
+    },
+    {
+      "lo": 573,
+      "hi": 591,
+      "good": 4123,
+      "bad": 267
+    },
+    {
+      "lo": 591,
+      "hi": 609,
+      "good": 3384,
+      "bad": 118
+    },
+    {
+      "lo": 609,
+      "hi": 627,
+      "good": 2176,
+      "bad": 39
+    },
+    {
+      "lo": 627,
+      "hi": 646,
+      "good": 788,
+      "bad": 4
+    },
+    {
+      "lo": 646,
+      "hi": 664,
+      "good": 113,
+      "bad": 0
+    }
+  ],
+  "iv_rank": [
+    {
+      "variable": "loan_grade",
+      "iv": 0.879
+    },
+    {
+      "variable": "loan_percent_income",
+      "iv": 0.7731
+    },
+    {
+      "variable": "loan_int_rate",
+      "iv": 0.6515
+    },
+    {
+      "variable": "person_income",
+      "iv": 0.4579
+    },
+    {
+      "variable": "person_home_ownership",
+      "iv": 0.3753
+    },
+    {
+      "variable": "cb_person_default_on_file",
+      "iv": 0.1643
+    },
+    {
+      "variable": "loan_intent",
+      "iv": 0.0959
+    },
+    {
+      "variable": "loan_amnt",
+      "iv": 0.0775
+    },
+    {
+      "variable": "person_emp_length",
+      "iv": 0.067
+    }
+  ],
+  "score_min": 263,
+  "score_max": 664,
+  "score_mean": 543.7,
+  "score_median": 550.9,
+  "example_applicant": {
+    "raw": {
+      "person_age": 22.0,
+      "person_income": 31224.0,
+      "person_emp_length": 0.0,
+      "loan_amnt": 6400.0,
+      "loan_int_rate": 9.32,
+      "loan_percent_income": 0.2,
+      "cb_person_cred_hist_length": 4.0,
+      "person_home_ownership": "RENT",
+      "loan_intent": "EDUCATION",
+      "loan_grade": "A",
+      "cb_person_default_on_file": "N"
+    },
+    "bins": {
+      "person_income": "(3999.999, 33000.0]",
+      "person_emp_length": "(-0.001, 1.0]",
+      "loan_amnt": "(6000.0, 8000.0]",
+      "loan_int_rate": "(7.49, 9.33]",
+      "loan_percent_income": "(0.15, 0.2]",
+      "person_home_ownership": "RENT",
+      "loan_intent": "EDUCATION",
+      "loan_grade": "A",
+      "cb_person_default_on_file": "N"
+    },
+    "points": {
+      "person_income": -27,
+      "person_emp_length": -4,
+      "loan_amnt": 4,
+      "loan_int_rate": 1,
+      "loan_percent_income": 6,
+      "person_home_ownership": -13,
+      "loan_intent": 12,
+      "loan_grade": 31,
+      "cb_person_default_on_file": 0
+    },
+    "base_points": 526,
+    "total_score": 536,
+    "actual_outcome": 0
+  }
+}
